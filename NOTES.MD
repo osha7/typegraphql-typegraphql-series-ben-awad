@@ -30,5 +30,8 @@ touch index.ts
 // go to package.json file and add this at the bottom of the file // under devDependencies
 
 "scripts": {
-"start": "ts-node src/index.ts"
+"start": "nodemon --exec ts-node src/index.ts"
 }
+
+terminal command: yarn start
+visit: http://localhost:4000/graphql to see the graphql playground

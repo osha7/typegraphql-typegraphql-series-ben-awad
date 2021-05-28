@@ -5,7 +5,7 @@ import { buildSchema, Resolver, Query } from "type-graphql";
 
 @Resolver()
 class HelloResolver {
-    @Query(() => String) //a field for querying - query decorator // then declares what type the resolver should return (String)
+    @Query(() => String, { nullable: true }) //a field for querying - query decorator // then declares what type the resolver should return (String)
     async hello() {
         //this function is the name inside of the query
         return "Hello World";
